@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mink,Nantanit</title>
+    <link rel="stylesheet" href="/css/styes.css" />
+    <link rel="font" href="/css/clash-display.css" />
+    <link href="/pubilc/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-black sm:w-screen p-6 pb-40 flex w-full overflow-hidden">
+      <div class="sm:max-w-7xl mx-auto flex flex-col w-full">
+        <div
+          class="w-full sm:flex sm:justify-between gap-12"
+          onmouseover="mouseOut()"
+        >
+          <a href="/index.html">
+            <h1 class="font-semibold pointerDuck">Mink, Nantanit</h1>
+          </a>
+          <div class="sm:grid sm:grid-cols-3 sm:gap-8 w-3/5">
+            <div>
+              <p>
+                hi! my name is Mink Natanit Lertwittayarat. i am Fullstack Web
+                Developer and UX/UI designer who lives in bangkok.
+                <a class="text-lime-400 curser pointer" href="/aboutme.html"
+                  >about me.</a
+                >
+                <br />
+                <br />
+              </p>
+            </div>
+            <div>
+              <p>
+                you are probably curious to see what i have been working on past
+                few years, right?
+                <a class="text-lime-400 curser pointer" href="#work"
+                  >see my projects.</a
+                >
+                <br />
+                <br />
+              </p>
+            </div>
+
+            <div>
+              <p
+                onclick="copyLink()"
+                onmousedown="mDown(this)"
+                onmouseout="mOut(this)"
+                onmouseover="mOver(this)"
+              >
+                want to work together? send me a message
+                <span class="text-lime-400 curser" href="#"
+                  >ntn.mink@gmail.com</span
+                >
+                <span class="sm:hidden block text-white/40"
+                  >tap to copy! an email</span
+                >
+                <br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sm:h-[80vh] sm:relative flex flex-wrap w-4/5 sm:w-full">
+          <div id="mouseDiv" class="sm:block hidden"></div>
+          <h1
+            class="text-[62px] leading-[72px] sm:text-[132px] sm:leading-[128px] title sm:absolute sm:inset-x-0 sm:bottom-0"
+            onmouseover="mouseOver()"
+          >
+            a product designer who passionate about create new solutions
+          </h1>
+        </div>
+
+        <!-- content section Fullstack Web Developer Projects -->
+
+        <div
+          class="mt-40 sm:space-y-40 space-y-20"
+          id="work"
+          onmouseover="mouseOut()"
+        >
+          <h2 class="text-[60px] sm:mb-4 text-white/30">Recent Project</h2>
+
+          <!-- Start content section -->
+          <div
+            class="sm:p-6 flex sm:flex-nowrap flex-wrap sm:gap-20"
+            id="petcation"
+          >
+            <div
+              class="overflow-hidden sm:w-[76%] w-full sm:h-[440px] rounded-[16px]"
+            >
+              <video autoplay loop class="rounded-[16px]">
+                <source src="/pubilc/petcation/search2.mov" type="video/mp4" />
+              </video>
+              <!-- <img
+                class="w-full h-full object-cover"
+                src="/pubilc/petcation/main.mov"
+              /> -->
+            </div>
+            <div class="sm:w-[40%] sm:p-6 w-full p-4">
+              <h2 class="text-[62px] sm:block hidden">→</h2>
+              <h2 class="text-[62px]">Petcation</h2>
+              <h6>
+                An Airbnb website for pets ⎯ Here! users can book a holidays for
+                their pets or user can become a host themselves.
+                <a
+                  class="text-lime-400 curser pointer"
+                  href="/project/petcation.html"
+                  >read more</a
+                >
+              </h6>
+            </div>
+          </div>
+          <!-- End content section -->
+          <div
+            class="sm:p-6 flex sm:flex-nowrap flex-wrap sm:gap-20 flex-row-reverse"
+            id="quickpoll"
+          >
+            <div
+              class="overflow-hidden sm:w-[76%] w-full sm:h-[440px] rounded-[16px]"
+            >
+              <video autoplay loop class="rounded-[16px]">
+                <source
+                  src="/pubilc/quickpoll/createpoll.mov"
+                  type="video/mp4"
+                />
+              </video>
+              <!-- <img
+                class="w-full h-full object-cover"
+                src="/pubilc/petcation/main.mov"
+              /> -->
+            </div>
+            <div class="sm:w-[40%] sm:p-6 w-full p-4">
+              <h2 class="text-[62px] sm:block hidden">←</h2>
+              <h2 class="text-[62px]">Quick Poll</h2>
+              <h6>
+                Poll solution for gather user feedback before and after building
+                your product. ⎯ Enjoy your feedback
+                <a
+                  class="text-lime-400 curser pointer"
+                  href="/project/quickpoll.html"
+                  >read more</a
+                >
+              </h6>
+            </div>
+          </div>
+          <!-- End content section -->
+
+          <div class="flex gap-8 sm:flex-nowrap flex-wrap w-full">
+            <div class="space-y-8 sm:w-2/5 w-full">
+              <a
+                href="/mycv.html"
+                class="block text-center bg-white py-9 rounded-[40px] text-[42px] w-full text-black hover:bg-yellow-400"
+              >
+                <h4>My CV</h4>
+              </a>
+              <a
+                href="/aboutme.html"
+                class="block text-center bg-white py-9 rounded-[40px] text-[42px] w-full text-black hover:bg-lime-400"
+              >
+                <h4>About me</h4>
+              </a>
+            </div>
+
+            <div class="sm:w-3/5 w-full">
+              <h2
+                class="sm:text-[62px] text-[48px] leading-[62px] sm:leading-[82px] w-full"
+              >
+                As a learner i am look for opportunities to learn mobile app
+                skills.
+              </h2>
+              <p>
+                Such as Dart, Swift and Flutter or any kind of languages that
+                mobile application developers use.
+              </p>
+            </div>
+          </div>
+          <!-- End content section -->
+        </div>
+      </div>
+
+      <!-- End Body -->
+    </div>
+    <div class="bg-lime-400 sm:w-screen p-6 pb-20 text-black">
+      <div class="text-center space-y-8">
+        <h3
+          class="sm:text-[240px] text-[92px] leading-[86px] sm:leading-[200px] mt-20"
+        >
+          feel free to reach out
+        </h3>
+        <div
+          class="w-full flex text-black justify-center gap-6 sm:flex-nowrap flex-wrap"
+        >
+          <a href="https://github.com/MinkNanta" target="_blank"
+            ><p>Github</p></a
+          >
+          <a href="https://www.linkedin.com/in/ntnmink/" target="_blank"
+            ><p>Linkedin</p></a
+          >
+          <p>ntn.mink@gmail</p>
+          <p>(+66) 84 6229 466</p>
+        </div>
+        <h1 class="text-black/30">designed and developed by me</h1>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

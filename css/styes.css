@@ -1,0 +1,93 @@
+@import url("clash-display.css");
+
+/* font-family: 'ClashDisplay-Variable';
+font-family: 'ClashDisplay-Extralight';
+font-family: 'ClashDisplay-Light';
+font-family: 'ClashDisplay-Regular';
+font-family: 'ClashDisplay-Medium';
+font-family: 'ClashDisplay-Semibold';
+font-family: 'ClashDisplay-Bold'; */
+
+:root {
+  --main-color: #a3e635;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(210, 210, 210);
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color);
+}
+
+p {
+  font-size: 14px;
+}
+h2 {
+  font-family: "ClashDisplay-Medium";
+  line-height: 80px;
+}
+h3 {
+  font-family: "ClashDisplay-Medium";
+  line-height: 160px;
+}
+h4 {
+  font-family: "ClashDisplay-Medium";
+  line-height: 48px;
+}
+h5 {
+  font-family: "ClashDisplay-Regular";
+}
+h6 {
+  font-size: 16px;
+}
+
+.pointer {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔥</text></svg>")
+      16 0,
+    auto;
+}
+.pointerDuck {
+  cursor: url("pubilc/cursorDuck.cur") 20 20, auto;
+}
+.title {
+  font-family: "ClashDisplay-Medium";
+  font-size: 132px;
+  line-height: 128px;
+  letter-spacing: -2px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+#mouseDiv {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 20px;
+  right: 68px;
+  /* transform: translate(-50%, -50%); */
+  transition: 0.2s ease-out;
+}
+
+.title:hover {
+  cursor: none;
+}
+
+.photo {
+  transition: 0.2s ease-out;
+}
+.photo:hover {
+  transition: 0.2s ease-out;
+}
+
+/* flex-row-reverse */
+/* <p>♥︎♡♡♡♡</p> */
+/* <p>♥︎♥︎♡♡♡</p> */
+/* <p>♥︎♥︎♥︎♡♡</p> */
+/* <p>♥︎♥︎♥︎♥︎♡</p> */
+/* <p>♥︎♥︎♥︎♥︎♥︎</p> */
